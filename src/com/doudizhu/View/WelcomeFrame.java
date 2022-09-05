@@ -28,7 +28,7 @@ public class WelcomeFrame extends JFrame {
         setSize(1100, 700);//设置位置和大小
         Toolkit toolkit = Toolkit.getDefaultToolkit(); // 获取Toolkit对象
         Image icon = toolkit.getImage("resources/img/icon.png"); // 获取图⽚对象
-        this.setIconImage(icon); // 设置图标
+        setIconImage(icon); // 设置图标
         setLocationRelativeTo(null);//设置居中,就不需要设置从哪开始了
         setTitle("欢乐斗地主");//设置标题
         setResizable(false);//设置不能修改大小

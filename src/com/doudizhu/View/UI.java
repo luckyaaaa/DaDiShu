@@ -29,6 +29,7 @@ public class UI {
 
         gameFrame = new GameFrame(controller);
         optionGamesFrame = new OptionGamesFrame();
+        AccountFrame accountFrame = new AccountFrame(controller);
 
         try {
             controller.mouseRightLi.changeFlavor("Nimbus 风格");
@@ -38,8 +39,9 @@ public class UI {
 //        Font sysFont = new Font("黑体", 1, 15); //修改全局系统字体，自己的还得自己添加
 //        initGobalFont(sysFont);
 
-        welcomeFrame.setVisible(true);
-//        gameFrame.setVisible(true);
+//        welcomeFrame.setVisible(true);
+        gameFrame.setVisible(true);
+//        accountFrame.setVisible(true);
 
     }
 

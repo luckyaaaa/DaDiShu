@@ -30,12 +30,20 @@ public class GameRightPanel extends JPanel {
     @Override
     protected void paintComponent(Graphics g) {//这个没s
         super.paintComponent(g);//实现图片绘制的方法
-        Image bgImg1 = new ImageIcon("resources/img/player/girl_farmer_smile.png").getImage();//绘制背景图片
-        g.drawImage(bgImg1, 20, 52, 97, 97, null);//第五参数观察者
+        Image bgImg1 = new ImageIcon("resources/img/player/playerC.png").getImage();//绘制背景图片
+        g.drawImage(bgImg1, 20, 52, 90,90, null);//第五参数观察者
         for (int i=0;i<controller.playerC.frontView.size();i++) {
             Image bgImg = new ImageIcon(controller.playerC.frontView.get(i).frontView).getImage();//绘制背景图片
+
+
+        if (controller.playerC.isDiZhu &&(controller.playerC.frontView.get(i).frontView==controller.surplusCards.get(0).frontView||controller.playerC.frontView.get(i).frontView==controller.surplusCards.get(1).frontView||controller.playerC.frontView.get(i).frontView==controller.surplusCards.get(2).frontView)) {
+            g.drawImage(bgImg, 20, 150+12*i, 70, 101, null);//第五参数观察者
+        }else {
             g.drawImage(bgImg, 40, 150+12*i, 70, 101, null);//第五参数观察者
         }
+    }
+
+
 
     }
 }

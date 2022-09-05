@@ -16,5 +16,6 @@ public class Main {
 
         Controller controller = new Controller();
         new UI(controller);
+
     }
 }

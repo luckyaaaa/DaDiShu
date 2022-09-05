@@ -22,7 +22,7 @@ public class WelcomePanel extends JPanel {
         this.controller = controller;
         Font font = new Font("黑体", 1, 15);// 1是加粗
         setLayout(null);
-        startGame = new JButton(new ImageIcon("D:\\workspace\\JAVAworkspace\\JAVAworkspace\\resources\\img/btnWelcome.png"));
+        startGame = new JButton(new ImageIcon("D:/workspace/JAVAworkspace/JAVAworkspace/resources/img/btnWelcome.png"));
         gameIntroduce = new JButton(new ImageIcon("D:\\workspace\\JAVAworkspace\\JAVAworkspace\\resources\\img/btnWelcome2.png"));
         gameExit = new JButton(new ImageIcon("D:\\workspace\\JAVAworkspace\\JAVAworkspace\\resources\\img/btnWelcome3.png"));
 
