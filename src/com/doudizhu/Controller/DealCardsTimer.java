@@ -1,12 +1,11 @@
 package com.doudizhu.Controller;
 
-import com.doudizhu.Model.Player;
-import com.doudizhu.View.UI;
 
+import com.doudizhu.View.UI;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Random;
+
 
 /**
  * @Author Lucky友人a
@@ -16,7 +15,7 @@ import java.util.Random;
 public class DealCardsTimer {
     public Timer myTimer;                          //这里是Swing里的Timer类
     public Controller controller;
-    public int delay = 50; //时间间隔  单位是毫秒
+    public int delay = 10; //时间间隔  单位是毫秒
 
     public DealCardsTimer(Controller controller) {
         this.controller = controller;
@@ -33,6 +32,7 @@ public class DealCardsTimer {
             if (controller.paperCards.size() > 3) {
                 controller.nowPlayer.frontView.add(controller.paperCards.get(0));//将纸牌列表里的牌类给当前玩家列表添加
                 controller.nowPlayer.sort();//调用当前玩家类里面的卡牌排序方法
+
                 controller.paperCards.remove(0);//移除第一个数据
                 controller.lunPlayer();
 
@@ -40,6 +40,7 @@ public class DealCardsTimer {
 
             } else if (controller.paperCards.size() > 0) {
                 controller.surplusCards.add(controller.paperCards.get(0));
+                controller.paperCards.get(0).cardChoice=true;
                 controller.paperCards.remove(0);//移除第一个数据
             } else {
                 myTimer.stop();//定时器结束

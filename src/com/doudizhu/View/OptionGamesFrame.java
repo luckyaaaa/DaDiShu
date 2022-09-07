@@ -1,7 +1,7 @@
 package com.doudizhu.View;
 
 import javax.swing.*;
-import java.awt.*;
+
 
 /**
  * @Author Lucky友人a

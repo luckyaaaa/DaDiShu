@@ -2,7 +2,6 @@ package com.doudizhu.Model;
 
 import com.doudizhu.Controller.Controller;
 
-import java.util.Random;
 
 /**
  * @Author Lucky友人a

@@ -1,9 +1,6 @@
 package com.doudizhu.Controller;
 
 
-import com.doudizhu.Model.Player;
-import com.doudizhu.Model.PlayerAi1;
-import com.doudizhu.Model.PlayerAi2;
 import com.doudizhu.View.UI;
 
 import javax.swing.*;
@@ -62,7 +59,9 @@ public class GameActionLis implements ActionListener {  //因为动作监听只�
                         "关于传一斗地主", JOptionPane.YES_NO_OPTION, -1, null, controller.relevantGame, controller.relevantGame[0]);
                 break;
             case "dealCards":
-
+                UI.gameFrame.gamePanel.plBJLabel.setText("");
+                UI.gameFrame.gamePanel.plCJLabel.setText("");
+                //定时器启动
                 if (controller.isStart) { //这是游戏中
                     controller.gameTimer.myTimer.stop();
                     controller.playerTimer.playerTimer.stop();
@@ -70,42 +69,52 @@ public class GameActionLis implements ActionListener {  //因为动作监听只�
 
                     int a = JOptionPane.showOptionDialog(UI.welcomeFrame, "游戏正在继续，您希望做什么？",
                             "新游戏", JOptionPane.YES_NO_OPTION, -1, null, controller.playerGaming, controller.playerGaming[0]);
+                    //定时器启动
                     if (a == 0) {
+                        for (int i = 0; i < controller.playerA.frontView.size(); i++) {
+//                            UI.gameFrame.gamePanel.gameSouthPanel.remove(controller.playerA.frontView.get(i));
+                            controller.playerA.frontView.get(i).setVisible(false);//2种方法隐藏这个组件,隐藏其实就没掉了
+                        }
                         System.out.println("重新开始新的发牌");
                         System.out.println("----------------");
                         controller.paperCards.clear();
                         controller.surplusCards.clear();
+
                         controller.playerA.frontView.clear();
                         controller.playerB.frontView.clear();
                         controller.playerC.frontView.clear();
+                        controller.playerA.isDiZhu = false;
+                        controller.playerB.isDiZhu = false;
+                        controller.playerC.isDiZhu = false;
+                        controller.playerA.callScore = 0;
+                        controller.playerB.callScore = 0;
+                        controller.playerC.callScore = 0;
+
                         controller.init();
-                        controller.playerA.isDiZhu=false;
-                        controller.playerB.isDiZhu=false;
-                        controller.playerC.isDiZhu=false;
+                        UI.gameFrame.gamePanel.plBJLabel.setText("");
+                        UI.gameFrame.gamePanel.plCJLabel.setText("");
                         UI.gameFrame.gamePanel.btnSco1.setVisible(false);
                         UI.gameFrame.gamePanel.btnSco2.setVisible(false);
                         UI.gameFrame.gamePanel.btnSco3.setVisible(false);
                         UI.gameFrame.gamePanel.btnSco0.setVisible(false);
+                        UI.gameFrame.gamePanel.chuPai.setVisible(false);
+                        UI.gameFrame.gamePanel.buYao.setVisible(false);
                         controller.callScoreTimer.sum = 1;
                         controller.playerTimer.sum1 = 1;
+                        controller.callAry = new int[]{0, 3, 2, 1};
                         controller.baseScore = 0;
+
                         UI.gameFrame.repaint();
                         //开始新的一轮
                         controller.isStart = true;//第一轮游戏开始
                         controller.firstGetCard();//确定谁是第一个拿牌的
-                        controller.gameTimer.myTimer.start();//定时器启动
-//                        controller.playerTimer.playerTimer.start();
-//                        controller.callScoreTimer.callTimer.start();
-                    }else {
-                        controller.gameTimer.myTimer.start();//定时器启动
-                    }
-                } else {                    controller.isStart = true;//第一轮游戏开始
-                    controller.firstGetCard();//确定谁是第一个拿牌的
-                    controller.gameTimer.myTimer.start();//定时器启动
-                }
 
-//                controller.playerTimer.playerTimer.start();
-//                controller.callScoreTimer.callTimer.start();
+                    }
+                } else {
+                    controller.isStart = true;//第一轮游戏开始
+                    controller.firstGetCard();//确定谁是第一个拿牌的
+                }
+                controller.gameTimer.myTimer.start();//定时器启动
 
                 break;
             case "1分":
@@ -153,9 +162,11 @@ public class GameActionLis implements ActionListener {  //因为动作监听只�
                 UI.gameFrame.gamePanel.btnSco3.setVisible(false);
                 UI.gameFrame.gamePanel.btnSco0.setVisible(false);
                 controller.playerA.isDiZhu = true;
-                controller.diZhuPai();
+                controller.nowPlayer = controller.playerA;
                 controller.playerTimer.playerTimer.stop();
                 controller.callScoreTimer.callTimer.stop();
+                controller.diZhuPai();
+                controller.gameStart();
                 break;
             case "不叫":
                 System.out.println("玩家A不叫");
@@ -176,6 +187,23 @@ public class GameActionLis implements ActionListener {  //因为动作监听只�
                     controller.callScoreTimer.callTimer.stop();//停下计时器
                 }
                 break;
+            case "chuPai":
+//                controller.surplusCards.clear();
+
+                controller.chuPaper();
+
+                System.out.println("触发出牌监听");
+                controller.chuPaiTimer.chuPaiTimer.stop();
+                controller.chuPaiTimer.sum2=1;
+                System.out.println("出牌倒计时结束");
+                controller.lunPlayer();
+                controller.gameStart();//C
+                controller.gameStart();//b
+
+                controller.gameStart();//又到a
+//                UI.gameFrame.gamePanel.buYao.setVisible(true);
+//                UI.gameFrame.gamePanel.chuPai.setVisible(true);
+
         }
 
     }

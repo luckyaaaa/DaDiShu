@@ -1,7 +1,6 @@
 package com.doudizhu.View;
 
 import com.doudizhu.Controller.Controller;
-
 import javax.swing.*;
 import java.awt.*;
 
@@ -13,37 +12,31 @@ import java.awt.*;
 public class GameRightPanel extends JPanel {
     public Controller controller;
     public JLabel jlPlayer2;
+
     public GameRightPanel(Controller controller) {
         this.controller = controller;
-        Font font = new Font("黑体", 1, 15);// 1是加粗
+        Font font = new Font("黑体", 1, 20);// 1是加粗
         setLayout(null);
         setOpaque(false);//允许底层像素显示
 //        setBackground(null);//让背景没有颜色
         setPreferredSize(new Dimension(120, 0));// 首选大小，右边框的宽
 
         jlPlayer2 = new JLabel(controller.playerC.playerName);
-        jlPlayer2.setBounds(55,10,50,50);
+        jlPlayer2.setBounds(35, 10, 70, 50);
         add(jlPlayer2);
         jlPlayer2.setFont(font);
 
     }
+
     @Override
     protected void paintComponent(Graphics g) {//这个没s
         super.paintComponent(g);//实现图片绘制的方法
         Image bgImg1 = new ImageIcon("resources/img/player/playerC.png").getImage();//绘制背景图片
-        g.drawImage(bgImg1, 20, 52, 90,90, null);//第五参数观察者
-        for (int i=0;i<controller.playerC.frontView.size();i++) {
+        g.drawImage(bgImg1, 20, 52, 90, 90, null);//第五参数观察者
+        for (int i = 0; i < controller.playerC.frontView.size(); i++) {
             Image bgImg = new ImageIcon(controller.playerC.frontView.get(i).frontView).getImage();//绘制背景图片
+            g.drawImage(bgImg, 40, 150 + 12 * i, 70, 101, null);//第五参数观察者
 
-
-        if (controller.playerC.isDiZhu &&(controller.playerC.frontView.get(i).frontView==controller.surplusCards.get(0).frontView||controller.playerC.frontView.get(i).frontView==controller.surplusCards.get(1).frontView||controller.playerC.frontView.get(i).frontView==controller.surplusCards.get(2).frontView)) {
-            g.drawImage(bgImg, 20, 150+12*i, 70, 101, null);//第五参数观察者
-        }else {
-            g.drawImage(bgImg, 40, 150+12*i, 70, 101, null);//第五参数观察者
         }
-    }
-
-
-
     }
 }

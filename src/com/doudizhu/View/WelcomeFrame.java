@@ -3,14 +3,8 @@ package com.doudizhu.View;
 
 import com.doudizhu.Controller.Controller;
 import com.doudizhu.Controller.GameWinListener;
-
-import javax.sound.sampled.LineUnavailableException;
-import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.*;
-import javax.swing.plaf.FontUIResource;
 import java.awt.*;
-import java.io.IOException;
-import java.util.Enumeration;
 
 /**
  * @Author Lucky友人a

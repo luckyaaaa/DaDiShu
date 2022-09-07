@@ -17,8 +17,8 @@ public class PlayerFather {
     public int Score;
     public ArrayList<PaperCard> frontView;
     public Controller controller;
-    public int callScore;
-    public boolean isDiZhu;
+    public int callScore;//叫分
+    public boolean isDiZhu;//是否地主
     public PlayerFather( Controller controller, String playerName, int score) {
         this.controller=controller;
         this.playerName = playerName;

@@ -1,16 +1,11 @@
 package com.doudizhu.Controller;
 
-import com.doudizhu.Model.Player;
-import com.doudizhu.Model.PlayerAi2;
 import com.doudizhu.View.UI;
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.util.ArrayList;
+
 
 /**
  * @Author Lucky友人a
@@ -38,22 +33,24 @@ public class CallScoreTimer {
             if (sum == 1) {
                 if (controller.nowPlayer == controller.playerA) {
 
-
                     System.out.println("玩家先叫");
                     controller.playerA.callDiZhu();
-
                     controller.playerTimer.playerTimer.start();
 
                 } else {
                     System.out.println(controller.nowPlayer.playerName + "先叫");
                     controller.nowPlayer.callScore = controller.callAry[controller.nowPlayer.callDiZhu()];//接收第一个人机随机到的数值放进数组得到具体的叫分
                     if (controller.nowPlayer.callScore == 3) {
+                        controller.setSco();//设置人机喊的分数
+
                         controller.diZhuPai();
                         callTimer.stop();//停下计时器
+                        controller.clickPaper();
                     } else {
                         System.out.println("第" + (sum) + "次," + controller.nowPlayer.playerName + "叫了" + controller.nowPlayer.callScore + "分");
                         controller.baseScore = controller.nowPlayer.callScore;//将数组里的值就是底分
                         sum++;
+                        controller.setSco();//设置人机喊的分数
                         controller.lunPlayer();//换下一个叫
                     }
 
@@ -68,11 +65,11 @@ public class CallScoreTimer {
                     controller.playerTimer.playerTimer.start();
 
                 } else {
+                    controller.nowPlayer.callScore = controller.callAry[controller.nowPlayer.callDiZhu()];//随机到的数值放进数组得到具体的叫分
+                    controller.setSco();//设置人机喊的分数
                     if (controller.nowPlayer.callScore > 0) {
                         controller.baseScore = controller.nowPlayer.callScore;
                     }
-                    controller.nowPlayer.callScore = controller.callAry[controller.nowPlayer.callDiZhu()];//随机到的数值放进数组得到具体的叫分
-
                     if (controller.nowPlayer.callScore == 0) {
 
                         System.out.println("第" + (sum) + "次," + controller.nowPlayer.playerName + "叫了" + controller.nowPlayer.callScore + "分");
@@ -81,6 +78,7 @@ public class CallScoreTimer {
                         controller.diZhuPai();
                         callTimer.stop();//停下计时器
                         System.out.println("第" + (sum) + "次," + controller.nowPlayer.playerName + "叫了" + controller.nowPlayer.callScore + "分");
+                        controller.clickPaper();
                     } else {
 
                         System.out.println("第" + (sum) + "次," + controller.nowPlayer.playerName + "叫了" + controller.nowPlayer.callScore + "分");
@@ -98,12 +96,6 @@ public class CallScoreTimer {
                     callTimer.stop();//停下计时器
                 }
             }
-
-
         }
-//
-
     };
-
-
 }

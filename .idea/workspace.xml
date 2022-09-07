@@ -2,48 +2,59 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be896402-9262-472e-923d-593a7ca99887" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/doudizhu/Controller/CallScoreTimer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/doudizhu/Controller/PlayerCallTimer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/doudizhu/Model/PlayerAi1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/doudizhu/Model/PlayerAi2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/doudizhu/Model/PlayerFather.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/doudizhu/View/AccountFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/doudizhu/Controller/ChuPaperTimer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/doudizhu/Controller/PaperMouLis.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JAVAworkspace/com/doudizhu/Controller/CallScoreTimer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JAVAworkspace/com/doudizhu/Controller/CallScoreTimer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JAVAworkspace/com/doudizhu/Controller/CallScoreTimer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JAVAworkspace/com/doudizhu/Controller/CallScoreTimer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JAVAworkspace/com/doudizhu/Controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JAVAworkspace/com/doudizhu/Controller/Controller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JAVAworkspace/com/doudizhu/Controller/DealCardsTimer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JAVAworkspace/com/doudizhu/Controller/DealCardsTimer$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JAVAworkspace/com/doudizhu/Controller/DealCardsTimer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JAVAworkspace/com/doudizhu/Controller/DealCardsTimer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JAVAworkspace/com/doudizhu/Controller/GameActionLis.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JAVAworkspace/com/doudizhu/Controller/GameActionLis.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JAVAworkspace/com/doudizhu/Main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JAVAworkspace/com/doudizhu/Main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JAVAworkspace/com/doudizhu/Model/Player$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JAVAworkspace/com/doudizhu/Model/PaperCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JAVAworkspace/com/doudizhu/Model/PaperCard.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JAVAworkspace/com/doudizhu/Model/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JAVAworkspace/com/doudizhu/Model/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JAVAworkspace/com/doudizhu/Model/PlayerAi1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JAVAworkspace/com/doudizhu/Model/PlayerAi1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JAVAworkspace/com/doudizhu/Model/PlayerAi2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JAVAworkspace/com/doudizhu/Model/PlayerAi2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JAVAworkspace/com/doudizhu/View/GameLeftPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JAVAworkspace/com/doudizhu/View/GameLeftPanel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JAVAworkspace/com/doudizhu/View/GamePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JAVAworkspace/com/doudizhu/View/GamePanel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JAVAworkspace/com/doudizhu/View/GameRightPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JAVAworkspace/com/doudizhu/View/GameRightPanel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JAVAworkspace/com/doudizhu/View/GameSouthPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JAVAworkspace/com/doudizhu/View/GameSouthPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JAVAworkspace/com/doudizhu/View/UI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JAVAworkspace/com/doudizhu/View/UI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/img/bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/img/bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/img/chuPai.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/img/cover.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/img/cover.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/img/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/img/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JAVAworkspace/com/doudizhu/View/WelcomeFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JAVAworkspace/com/doudizhu/View/WelcomeFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/doudizhu/Controller/CallScoreTimer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/doudizhu/Controller/CallScoreTimer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/doudizhu/Controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/doudizhu/Controller/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/doudizhu/Controller/DealCardsTimer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/doudizhu/Controller/DealCardsTimer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/doudizhu/Controller/GameActionLis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/doudizhu/Controller/GameActionLis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/doudizhu/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/doudizhu/Main/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/doudizhu/Model/PaperCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/doudizhu/Model/PaperCard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/doudizhu/Model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/doudizhu/Model/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/doudizhu/Model/PlayerAi1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/doudizhu/Model/PlayerAi1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/doudizhu/Model/PlayerAi2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/doudizhu/Model/PlayerAi2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/doudizhu/Model/PlayerFather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/doudizhu/Model/PlayerFather.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/doudizhu/View/AccountFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/doudizhu/View/AccountFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/doudizhu/View/GameLeftPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/doudizhu/View/GameLeftPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/doudizhu/View/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/doudizhu/View/GamePanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/doudizhu/View/GameRightPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/doudizhu/View/GameRightPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/doudizhu/View/GameSouthPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/doudizhu/View/GameSouthPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/doudizhu/View/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/doudizhu/View/UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/doudizhu/View/OptionGamesFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/doudizhu/View/OptionGamesFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/doudizhu/View/WelcomeFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/doudizhu/View/WelcomeFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/doudizhu/View/WelcomePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/doudizhu/View/WelcomePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -238,12 +249,32 @@
       <workItem from="1662263160257" duration="25396000" />
       <workItem from="1662303738807" duration="1371000" />
       <workItem from="1662338042946" duration="17821000" />
-      <workItem from="1662362684580" duration="4261000" />
+      <workItem from="1662362684580" duration="5920000" />
+      <workItem from="1662372021865" duration="1068000" />
+      <workItem from="1662373190091" duration="750000" />
+      <workItem from="1662389553809" duration="3719000" />
+      <workItem from="1662425028725" duration="9385000" />
+      <workItem from="1662434929452" duration="17944000" />
+      <workItem from="1662510396506" duration="16160000" />
+      <workItem from="1662531401355" duration="8304000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Notifications" timestamp="1661349108286">
@@ -288,76 +319,76 @@
       <screen x="0" y="0" width="1463" height="783" />
     </state>
     <state x="571" y="164" key="FileChooserDialogImpl/0.0.1463.783@0.0.1463.783" timestamp="1661914606031" />
-    <state width="1537" height="322" key="GridCell.Tab.0.bottom" timestamp="1662367935326">
+    <state width="1493" height="480" key="GridCell.Tab.0.bottom" timestamp="1662539781707">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="155" height="553" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1661927862700" />
     <state width="374" height="655" key="GridCell.Tab.0.bottom/0.0.1463.783@0.0.1463.783" timestamp="1662029053658" />
     <state width="290" height="696" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1463.783@0.0.1536.824" timestamp="1661963833191" />
     <state width="1707" height="865" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1707.920@0.0.1536.824" timestamp="1662305120154" />
-    <state width="1537" height="322" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1662367935326" />
+    <state width="1493" height="480" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1662539781707" />
     <state width="579" height="793" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1661899316553" />
-    <state width="1537" height="322" key="GridCell.Tab.0.center" timestamp="1662367935325">
+    <state width="1493" height="480" key="GridCell.Tab.0.center" timestamp="1662539781707">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="155" height="553" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1661927862700" />
     <state width="374" height="655" key="GridCell.Tab.0.center/0.0.1463.783@0.0.1463.783" timestamp="1662029053658" />
     <state width="290" height="696" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1463.783@0.0.1536.824" timestamp="1661963833190" />
     <state width="1707" height="865" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1707.920@0.0.1536.824" timestamp="1662305120154" />
-    <state width="1537" height="322" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1662367935325" />
+    <state width="1493" height="480" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1662539781707" />
     <state width="579" height="793" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1661899316553" />
-    <state width="1537" height="322" key="GridCell.Tab.0.left" timestamp="1662367935324">
+    <state width="1493" height="480" key="GridCell.Tab.0.left" timestamp="1662539781707">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="155" height="553" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1661927862700" />
     <state width="374" height="655" key="GridCell.Tab.0.left/0.0.1463.783@0.0.1463.783" timestamp="1662029053658" />
     <state width="290" height="696" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1463.783@0.0.1536.824" timestamp="1661963833190" />
     <state width="1707" height="865" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1707.920@0.0.1536.824" timestamp="1662305120154" />
-    <state width="1537" height="322" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1662367935324" />
+    <state width="1493" height="480" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1662539781707" />
     <state width="579" height="793" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1661899316553" />
-    <state width="1537" height="322" key="GridCell.Tab.0.right" timestamp="1662367935325">
+    <state width="1493" height="480" key="GridCell.Tab.0.right" timestamp="1662539781707">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="155" height="553" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1661927862700" />
     <state width="374" height="655" key="GridCell.Tab.0.right/0.0.1463.783@0.0.1463.783" timestamp="1662029053658" />
     <state width="290" height="696" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1463.783@0.0.1536.824" timestamp="1661963833191" />
     <state width="1707" height="865" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1707.920@0.0.1536.824" timestamp="1662305120154" />
-    <state width="1537" height="322" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1662367935325" />
+    <state width="1493" height="480" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1662539781707" />
     <state width="579" height="793" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1661899316553" />
-    <state width="1537" height="768" key="GridCell.Tab.1.bottom" timestamp="1662356431495">
+    <state width="1493" height="480" key="GridCell.Tab.1.bottom" timestamp="1662539781707">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="315" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1707.920@0.0.1536.824" timestamp="1662292564572" />
-    <state width="1537" height="768" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1662356431495" />
+    <state width="1493" height="480" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1662539781707" />
     <state width="1663" height="379" key="GridCell.Tab.1.bottom/0.0.1707.920@0.0.1707.920" timestamp="1661771030377" />
-    <state width="1537" height="768" key="GridCell.Tab.1.center" timestamp="1662356431495">
+    <state width="1493" height="480" key="GridCell.Tab.1.center" timestamp="1662539781707">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="315" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1707.920@0.0.1536.824" timestamp="1662292564572" />
-    <state width="1537" height="768" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1662356431495" />
+    <state width="1493" height="480" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1662539781707" />
     <state width="1663" height="379" key="GridCell.Tab.1.center/0.0.1707.920@0.0.1707.920" timestamp="1661771030377" />
-    <state width="1537" height="768" key="GridCell.Tab.1.left" timestamp="1662356431495">
+    <state width="1493" height="480" key="GridCell.Tab.1.left" timestamp="1662539781707">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="315" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1707.920@0.0.1536.824" timestamp="1662292564572" />
-    <state width="1537" height="768" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1662356431495" />
+    <state width="1493" height="480" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1662539781707" />
     <state width="1663" height="379" key="GridCell.Tab.1.left/0.0.1707.920@0.0.1707.920" timestamp="1661771030377" />
-    <state width="1537" height="768" key="GridCell.Tab.1.right" timestamp="1662356431495">
+    <state width="1493" height="480" key="GridCell.Tab.1.right" timestamp="1662539781707">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="315" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1707.920@0.0.1536.824" timestamp="1662292564572" />
-    <state width="1537" height="768" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1662356431495" />
+    <state width="1493" height="480" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1662539781707" />
     <state width="1663" height="379" key="GridCell.Tab.1.right/0.0.1707.920@0.0.1707.920" timestamp="1661771030377" />
     <state x="434" y="195" key="IDE.errors.dialog" timestamp="1661416264999">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
     <state x="434" y="195" key="IDE.errors.dialog/0.0.1707.920@0.0.1707.920" timestamp="1661416264999" />
-    <state x="257" y="51" key="SettingsEditor" timestamp="1661920631786">
-      <screen x="0" y="0" width="1463" height="783" />
+    <state x="284" y="0" key="SettingsEditor" timestamp="1662453750119">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="257" y="51" key="SettingsEditor/0.0.1463.783@0.0.1463.783" timestamp="1661920631786" />
     <state x="270" y="54" key="SettingsEditor/0.0.1536.824/1920.0.1707.920@0.0.1536.824" timestamp="1661689102984" />
-    <state x="284" y="76" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1661688224132" />
+    <state x="284" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1662453750119" />
     <state x="519" y="127" key="SettingsEditor/0.0.1707.920@0.0.1707.920" timestamp="1661495303337" />
     <state x="429" y="285" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1661905892877">
       <screen x="0" y="0" width="1463" height="783" />
@@ -372,10 +403,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="321" y="148" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824/1920.0.1707.920@0.0.1536.824" timestamp="1662273791495" />
-    <state x="499" y="177" key="extract.method.dialog" timestamp="1661694302784">
+    <state x="499" y="177" key="extract.method.dialog" timestamp="1662520126365">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="177" key="extract.method.dialog/0.0.1536.824/1920.0.1707.920@0.0.1536.824" timestamp="1661694302784" />
+    <state x="499" y="177" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1662520126365" />
     <state x="434" y="255" width="713" height="306" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1661914636950">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
@@ -384,11 +416,12 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824/1920.0.1463.783@0.0.1536.824" timestamp="1661960599960" />
-    <state x="411" y="138" width="672" height="160" key="search.everywhere.popup" timestamp="1662027935919">
-      <screen x="0" y="0" width="1463" height="783" />
+    <state x="432" y="145" width="706" height="169" key="search.everywhere.popup" timestamp="1662534942257">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="411" y="138" width="672" height="160" key="search.everywhere.popup/0.0.1463.783@0.0.1463.783" timestamp="1662027935919" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1707.920@0.0.1536.824" timestamp="1661350048305" />
+    <state x="432" y="145" width="706" height="169" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1662534942257" />
     <state x="479" y="162" width="670" height="58" key="search.everywhere.popup/0.0.1707.920@0.0.1707.920" timestamp="1661846271619" />
   </component>
 </project>
